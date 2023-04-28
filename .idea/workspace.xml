@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0831b7a-e628-42a8-a94c-681fcc25995c" name="Changes" comment="Initial setup commit.">
-      <change afterPath="$PROJECT_DIR$/responses/car_response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/responses/client_response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/car_route.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/client_route.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/configs/setup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-    </list>
+    <list default="true" id="a0831b7a-e628-42a8-a94c-681fcc25995c" name="Changes" comment="Initial setup commit." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
