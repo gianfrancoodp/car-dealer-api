@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "9e9572cd-5e2a-4aae-9ca3-d9cbd577ce8f",
+		"name": "Car-Dealer-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18370734"
+	},
+	"item": [
+		{
+			"name": "Port Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000"
+				}
+			},
+			"response": []
+		}
+	]
+}
