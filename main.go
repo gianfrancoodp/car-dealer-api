@@ -1,7 +1,8 @@
 package main
 
 import (
-	"car-dealer-api/configs" //add this
+	"car-dealer-api/configs"
+	"car-dealer-api/routes"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -10,6 +11,10 @@ func main() {
 
 	//run database
 	configs.ConnectDB()
+
+	//routes
+	routes.CarRoute(app)
+	//routes.ClientRoute(app)
 
 	app.Listen(":6000")
 }
