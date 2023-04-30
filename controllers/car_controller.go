@@ -18,7 +18,7 @@ import (
 var carCollection *mongo.Collection = configs.GetCollection(configs.DB, "cars")
 var validate = validator.New()
 
-// Create Car
+// Create a new Car
 func CreateCar(c *fiber.Ctx) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	var car models.Car
@@ -61,7 +61,7 @@ func GetCar(c *fiber.Ctx) error {
 
 	err := carCollection.FindOne(ctx, bson.M{"id": objId}).Decode(&car)
 	if err != nil {
-		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "Error: there is no Car with that ID number.", Data: &fiber.Map{"data": err.Error()}})
+		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "Error", Data: &fiber.Map{"data": err.Error()}})
 	}
 
 	return c.Status(http.StatusOK).JSON(responses.CarResponse{Status: http.StatusOK, Message: "The operation was successfully.", Data: &fiber.Map{"data": car}})
@@ -131,7 +131,7 @@ func DeleteCar(c *fiber.Ctx) error {
 	)
 }
 
-// Det All Cars
+// Get All Cars
 func GetAllCars(c *fiber.Ctx) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	var cars []models.Car
