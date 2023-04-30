@@ -7,6 +7,128 @@
 	},
 	"item": [
 		{
+			"name": "Car Endpoints",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"model\": \"Logan\",\r\n    \"manufacturer\": \"Renault\",\r\n    \"year\": 2003,\r\n    \"kilometres\": 265300\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/car",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/cars/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"cars",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/car/644d95481041c2f4caec0e7a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"car",
+								"644d95481041c2f4caec0e7a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"model\": \"Sandero\",\r\n    \"manufacturer\": \"Renault\",\r\n    \"year\": 2017,\r\n    \"kilometres\": 200000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/car/644d95621041c2f4caec0e7c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"car",
+								"644d95621041c2f4caec0e7c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/car/644d969e1041c2f4caec0e82",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"car",
+								"644d969e1041c2f4caec0e82"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Port Test",
 			"request": {
 				"method": "GET",
