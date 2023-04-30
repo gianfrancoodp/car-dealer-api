@@ -1,0 +1,200 @@
+Index: src/pkg/mod/cache/download/golang.org/x/text/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v0.3.0\r\nv0.3.3\r\nv0.3.6\r\nv0.3.7\r\nv0.3.8\r\nv0.5.0\r\nv0.9.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/golang.org/x/text/@v/list b/src/pkg/mod/cache/download/golang.org/x/text/@v/list
+--- a/src/pkg/mod/cache/download/golang.org/x/text/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/golang.org/x/text/@v/list	(date 1682808900973)
+@@ -4,4 +4,5 @@
+ v0.3.7
+ v0.3.8
+ v0.5.0
++v0.8.0
+ v0.9.0
+Index: src/pkg/mod/cache/download/golang.org/x/net/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v0.0.0-20190404232315-eb5bcb51f2a3\r\nv0.0.0-20190620200207-3b0461eec859\r\nv0.0.0-20201021035429-f5854403a974\r\nv0.0.0-20210226172049-e18ecbb05110\r\nv0.0.0-20211112202133-69e39bad7dc2\r\nv0.0.0-20220722155237-a158d28d115b\r\nv0.3.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/golang.org/x/net/@v/list b/src/pkg/mod/cache/download/golang.org/x/net/@v/list
+--- a/src/pkg/mod/cache/download/golang.org/x/net/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/golang.org/x/net/@v/list	(date 1682808902629)
+@@ -5,3 +5,6 @@
+ v0.0.0-20211112202133-69e39bad7dc2
+ v0.0.0-20220722155237-a158d28d115b
+ v0.3.0
++v0.6.0
++v0.8.0
++v0.9.0
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/.idea/workspace.xml	(date 1682808916486)
+@@ -7234,23 +7234,23 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultGoTemplateProperty": "Go File",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "go.import.settings.migrated": "true",
+-    "go.sdk.automatically.set": "true",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "last_opened_file_path": "C:/Users/gian_",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
++    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/gian_&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager" selected="Go Build.main.go">
+     <configuration name="main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
+       <module name="car-dealer-api" />
+@@ -7273,8 +7273,13 @@
+       <pattern value="^\QTestSave\E$" />
+       <method v="2" />
+     </configuration>
++    <list>
++      <item itemvalue="Go Build.main.go" />
++      <item itemvalue="Go Test.TestSave in car-dealer-api/src/services/car.service" />
++    </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Go Test.TestSave in car-dealer-api/src/services/car.service" />
+         <item itemvalue="Go Test.TestSave in car-dealer-api/src/services/car.service" />
+         <item itemvalue="Go Test.TestSave in car-dealer-api/src/services/car.service" />
+       </list>
+Index: src/pkg/mod/cache/download/golang.org/x/tools/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v0.0.0-20180917221912-90fa682c2a6e\r\nv0.0.0-20191119224855-298f0cb1881e\r\nv0.0.0-20201022035929-9cf592e881e9\r\nv0.1.12\r\nv0.4.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/golang.org/x/tools/@v/list b/src/pkg/mod/cache/download/golang.org/x/tools/@v/list
+--- a/src/pkg/mod/cache/download/golang.org/x/tools/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/golang.org/x/tools/@v/list	(date 1682808892612)
+@@ -3,3 +3,4 @@
+ v0.0.0-20201022035929-9cf592e881e9
+ v0.1.12
+ v0.4.0
++v0.6.0
+Index: src/pkg/mod/cache/download/github.com/valyala/fasthttp/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v1.46.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/github.com/valyala/fasthttp/@v/list b/src/pkg/mod/cache/download/github.com/valyala/fasthttp/@v/list
+--- a/src/pkg/mod/cache/download/github.com/valyala/fasthttp/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/github.com/valyala/fasthttp/@v/list	(date 1682808907393)
+@@ -1,1 +1,2 @@
++v1.45.0
+ v1.46.0
+Index: src/pkg/mod/cache/download/golang.org/x/sys/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v0.0.0-20190215142949-d0b11bdaac8a\r\nv0.0.0-20190412213103-97732733099d\r\nv0.0.0-20200930185726-fdedc70b468f\r\nv0.0.0-20201119102817-f84b799fce68\r\nv0.0.0-20210423082822-04245dca01da\r\nv0.0.0-20210615035016-665e8c7367d1\r\nv0.0.0-20220520151302-bc2c85ada10a\r\nv0.0.0-20220722155257-8c9f86f7a55f\r\nv0.0.0-20220811171246-fbc7d0a398ab\r\nv0.3.0\r\nv0.6.0\r\nv0.7.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/golang.org/x/sys/@v/list b/src/pkg/mod/cache/download/golang.org/x/sys/@v/list
+--- a/src/pkg/mod/cache/download/golang.org/x/sys/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/golang.org/x/sys/@v/list	(date 1682808892612)
+@@ -8,5 +8,6 @@
+ v0.0.0-20220722155257-8c9f86f7a55f
+ v0.0.0-20220811171246-fbc7d0a398ab
+ v0.3.0
++v0.5.0
+ v0.6.0
+ v0.7.0
+Index: src/pkg/mod/cache/download/github.com/klauspost/compress/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v1.13.6\r\nv1.16.5\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/github.com/klauspost/compress/@v/list b/src/pkg/mod/cache/download/github.com/klauspost/compress/@v/list
+--- a/src/pkg/mod/cache/download/github.com/klauspost/compress/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/github.com/klauspost/compress/@v/list	(date 1682808900974)
+@@ -1,2 +1,3 @@
+ v1.13.6
++v1.16.3
+ v1.16.5
+Index: src/pkg/mod/cache/download/golang.org/x/term/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v0.0.0-20201126162022-7de9c90e9dd1\r\nv0.0.0-20210927222741-03fcf44c2211\r\nv0.3.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/golang.org/x/term/@v/list b/src/pkg/mod/cache/download/golang.org/x/term/@v/list
+--- a/src/pkg/mod/cache/download/golang.org/x/term/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/golang.org/x/term/@v/list	(date 1682808902626)
+@@ -1,3 +1,4 @@
+ v0.0.0-20201126162022-7de9c90e9dd1
+ v0.0.0-20210927222741-03fcf44c2211
+ v0.3.0
++v0.7.0
+Index: src/pkg/mod/cache/download/golang.org/x/mod/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v0.3.0\r\nv0.6.0-dev.0.20220419223038-86c51ed26bb4\r\nv0.7.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/golang.org/x/mod/@v/list b/src/pkg/mod/cache/download/golang.org/x/mod/@v/list
+--- a/src/pkg/mod/cache/download/golang.org/x/mod/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/golang.org/x/mod/@v/list	(date 1682808892612)
+@@ -1,3 +1,4 @@
+ v0.3.0
+ v0.6.0-dev.0.20220419223038-86c51ed26bb4
+ v0.7.0
++v0.8.0
+Index: src/pkg/mod/cache/download/golang.org/x/crypto/@v/list
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>v0.0.0-20190308221718-c2843e01d9a2\r\nv0.0.0-20191011191535-87dc89f01550\r\nv0.0.0-20200302210943-78000ba7a073\r\nv0.0.0-20200622213623-75b288015ac9\r\nv0.0.0-20210921155107-089bfa567519\r\nv0.0.0-20220622213112-05595931fe9d\r\nv0.8.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pkg/mod/cache/download/golang.org/x/crypto/@v/list b/src/pkg/mod/cache/download/golang.org/x/crypto/@v/list
+--- a/src/pkg/mod/cache/download/golang.org/x/crypto/@v/list	(revision ebe64a26e19d334f596b8ff2fb2635a171c87073)
++++ b/src/pkg/mod/cache/download/golang.org/x/crypto/@v/list	(date 1682808900972)
+@@ -4,4 +4,5 @@
+ v0.0.0-20200622213623-75b288015ac9
+ v0.0.0-20210921155107-089bfa567519
+ v0.0.0-20220622213112-05595931fe9d
++v0.7.0
+ v0.8.0

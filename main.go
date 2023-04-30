@@ -14,7 +14,6 @@ func main() {
 
 	//routes
 	routes.CarRoute(app)
-	//routes.ClientRoute(app)
 
 	app.Listen(":6000")
 }
