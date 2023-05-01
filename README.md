@@ -60,7 +60,7 @@ http://localhost:6000/car/carId
 
 ## REST API Structure
 
-![rest-api-structure.png](https://github.com/gianfrancoodp/car-dealer-api/blob/master/doc/rest-api-structure.png)
+![rest-api-structure.png](https://github.com/gianfrancoodp/car-dealer-api/blob/master/doc/rest_api_structure.png)
 
 ## References
 1. Non-Relational Databases Naming Convention: https://www.coding-guidelines.lftechnology.com/docs/nosql/documentdb/document-db-naming-convention/).
