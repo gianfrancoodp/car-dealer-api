@@ -31,11 +31,11 @@ HTTP connections on port 6000, so point your client at
 
 The REST API Endpoints could be consumed in *Postman*. The collection file is in the "*routes*" folder, you can open this file in your Postman application:
 
-![Postman_collection.png](img_1.png)
+![Postman-Collection](https://github.com/gianfrancoodp/car-dealer-api/blob/master/doc/Postman_collection.png)
 
 The collection file has the following endpoints:
 
-![endpoints.png](img.png)
+![Endpoints.png](https://github.com/gianfrancoodp/car-dealer-api/blob/master/doc/endpoints.png)
 
 * `POST:` create a new car
 ```
@@ -60,7 +60,7 @@ http://localhost:6000/car/carId
 
 ## REST API Structure
 
-![rest-api-structure.png](img.png)
+![rest-api-structure.png](https://github.com/gianfrancoodp/car-dealer-api/blob/master/doc/rest-api-structure.png)
 
 ## References
 1. Non-Relational Databases Naming Convention: https://www.coding-guidelines.lftechnology.com/docs/nosql/documentdb/document-db-naming-convention/).
