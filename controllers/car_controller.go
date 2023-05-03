@@ -59,9 +59,10 @@ func GetCar(c *fiber.Ctx) error {
 
 	objId, _ := primitive.ObjectIDFromHex(carId)
 
+	//validate if the car ID exists
 	err := carCollection.FindOne(ctx, bson.M{"id": objId}).Decode(&car)
 	if err != nil {
-		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "Error", Data: &fiber.Map{"data": err.Error()}})
+		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "Error: invalid car ID.", Data: &fiber.Map{"data": err.Error()}})
 	}
 
 	return c.Status(http.StatusOK).JSON(responses.CarResponse{Status: http.StatusOK, Message: "The operation was successfully.", Data: &fiber.Map{"data": car}})
@@ -116,18 +117,21 @@ func DeleteCar(c *fiber.Ctx) error {
 	objId, _ := primitive.ObjectIDFromHex(carId)
 
 	result, err := carCollection.DeleteOne(ctx, bson.M{"id": objId})
+
+	//validate if the DeleteOne functions returns an Error
 	if err != nil {
-		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "error", Data: &fiber.Map{"data": err.Error()}})
+		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "Error: There is no car with that ID. ", Data: &fiber.Map{"data": err.Error()}})
 	}
 
+	//validate the ID number
 	if result.DeletedCount < 1 {
 		return c.Status(http.StatusNotFound).JSON(
-			responses.CarResponse{Status: http.StatusNotFound, Message: "error", Data: &fiber.Map{"data": "Error: The Car with the ID " + carId + " was not deleted."}},
+			responses.CarResponse{Status: http.StatusNotFound, Message: "Error", Data: &fiber.Map{"data": "Error: The Car with the ID " + carId + " does not exists."}},
 		)
 	}
 
 	return c.Status(http.StatusOK).JSON(
-		responses.CarResponse{Status: http.StatusOK, Message: "success", Data: &fiber.Map{"data": "The Car was deleted successfully."}},
+		responses.CarResponse{Status: http.StatusOK, Message: "Success", Data: &fiber.Map{"data": "The Car was deleted successfully."}},
 	)
 }
 
@@ -139,8 +143,9 @@ func GetAllCars(c *fiber.Ctx) error {
 
 	results, err := carCollection.Find(ctx, bson.M{})
 
+	//validate if the context has a collection
 	if err != nil {
-		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "error", Data: &fiber.Map{"data": err.Error()}})
+		return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "Error", Data: &fiber.Map{"data": err.Error()}})
 	}
 
 	//reading from the db in an optimal way
@@ -148,13 +153,13 @@ func GetAllCars(c *fiber.Ctx) error {
 	for results.Next(ctx) {
 		var singleCar models.Car
 		if err = results.Decode(&singleCar); err != nil {
-			return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "error", Data: &fiber.Map{"data": err.Error()}})
+			return c.Status(http.StatusInternalServerError).JSON(responses.CarResponse{Status: http.StatusInternalServerError, Message: "Error", Data: &fiber.Map{"data": err.Error()}})
 		}
 
 		cars = append(cars, singleCar)
 	}
 
 	return c.Status(http.StatusOK).JSON(
-		responses.CarResponse{Status: http.StatusOK, Message: "success", Data: &fiber.Map{"data": cars}},
+		responses.CarResponse{Status: http.StatusOK, Message: "Success", Data: &fiber.Map{"data": cars}},
 	)
 }
